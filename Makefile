@@ -1,6 +1,3 @@
-all :
-	@latex calculus-qr.tex
-
 .PHONY: clean
 clean: 
-	@rm -f *.toc *.log *.aux *.dvi
+	@rm -f *.toc *.dvi *.pdf *.log *.aux *.gz
