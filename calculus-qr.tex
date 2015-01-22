@@ -5,17 +5,154 @@
 \begin{document}
 \maketitle
 
-\tableofcontents
+\part{Before Calculus}
 
-\part{Basic Algebra}
+\chapter{Some Useful Algebraic Formulas}
 
-\chapter{Those Little Algebraic Equations}
-\section{Ratios}
-\textbf{Definition}: Ratio is the relation between two quantities of \textit{same} kind which describes what part or multiple is one of the another and it is usually written as,
-\[ \  A : B \]
-$A$ and $B$ are called the \textit{terms} of the ratio. 
-A ratio has the following properties,
-\[ a:b=ma:mb \]
-\[ {a \over b}:{c \over d} = {ad:bc} \]
+\section{Arithmetic and Geometric Progressions}
+Let $S$ be the sum of a series and $l$ be the last element of the series. 
+For the Arithmetic Progression for a series of $n$ terms starting with $a$ and having a difference between the terms $n+1$ and $n$ denoted as $t_{n+1} = t_{n} + d$
+\begin{equation}
+S = \frac{n}{2}[2a + (n - 1)d]
+\end{equation}
+\begin{equation}
+l = a + (n - 1)d
+\end{equation}
+Special case when $a = 1$ and $d = 1$,
+\begin{equation}
+S = \frac{n}{2}(n + 1)
+\end{equation}
+\begin{equation}
+l = n
+\end{equation}
+For the Geometric Progression for a series of $n$ terms starting with $a$ and having a difference between the terms $n+1$ and $n$ denoted as $t_{n+1} = t_{n}r$
+\begin{equation}
+S = \frac{a(r^{n} - 1)}{r - 1}
+\end{equation}
+\begin{equation}
+S = \frac{a(1 - r^{n})}{1 - r}
+\end{equation}
+\begin{equation}
+l = ar^{n - 1}
+\end{equation}
+
+\section{Roots of Quadratic Equations}
+The roots of a quadratic equation of the form $ax^{2} + bx + c = 0$ is given by,
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
+\end{equation}
+Properties of the roots
+\begin{description}
+\item If $b^{2} - 4ac$ is $positive$, roots are real and unequal.
+\item If $b^{2} - 4ac$ is $0$, roots are real and equal ($= \frac{b}{2a}$).
+\item If $b^{2} - 4ac$ is $negative$, roots are imaginary and unequal.
+\item If $b^{2} - 4ac$ is $perfect square$, roots are rational and unequal.
+\end{description}
+
+
+\section{Permutations and Combinations}
+\textbf{Permutation} is the process of $arranging$ some or all elements from a set. \textbf{Combination} is the $grouping$ or $selection$ of some or all elements from a set. 
+\begin{enumerate}
+\item If an operation can be performed $m$ ways and another operation can be performed $n$ ways, then the number of ways the two operation can be performed (in any order) is $mn$.
+\item Find the $Permutations$ of n $unique$ elements taken $r$ at a time
+\begin{equation}
+^{n}P_{r} = n(n - 1)(n - 2)...(n - r + 1)
+\end{equation}
+\item Find the $Combinations$ of n $unique$ elements taken $r$ at a time
+\begin{equation}
+^{n}C_{r} = \frac{n!}{r!(n - r)!}
+\end{equation}
+\item The number of combinations of $n$ elements taken $r$ at a time is equal to number of combinations of $n$ elements taken $n - r$ at a time. This is called complementary combination
+\begin{equation}
+^{n}C_{r} = ^{n}C_{n - r}
+\end{equation}
+\item The number of ways $m + n$ $unique$ objects can be divided in $m$ and $n$ groups
+\begin{equation}
+N_{m,n} = \frac{(m + n)!}{m!n!}
+\end{equation}
+If $m = n$, then
+\begin{equation}
+N_{m,n} = \frac{(m + n)!}{m!m!2!}
+\end{equation}
+\item The number of ways $m + n + p$ $unique$ objects can be divided in $m$, $n$ and $p$ groups
+\begin{equation}
+N_{m,n,p} = \frac{(m + n + p)!}{m!n!p!}
+\end{equation}
+If $m = n = p$, then
+\begin{equation}
+N_{m,n,p} = \frac{(m + n + p)!}{m!m!p!3!}
+\end{equation}
+\item The number of ways $n$ objects can be $arranged$ among themselves, where $p$ objects are of one kind, $q$ objects are another kind, $r$ objects are of third kind and rest are different 
+\begin{equation}
+x = \frac{n!}{p!q!r!}
+\end{equation}
+\end{enumerate}
+
+\section{Binomial Theorem}
+Binomial theorem for a constant $a$ and any index $n$ is defined as,
+\begin{equation}
+(x + a)^{n} = x^{n} + ^{n}C_{1}ax^{n - 1} + ^{n}C_{2}a^{2}x^{n - 2} + ... + ^{n}C_{n}a^{n}
+\end{equation}
+
+\section{Inequalities}
+\begin{description}
+\item If $a < b$ then,
+\begin{equation}
+a + c < b + c
+\end{equation}
+\begin{equation}
+a - c < b - c
+\end{equation}
+when $c > 0$
+\begin{equation}
+ac < bc
+\end{equation}
+\begin{equation}
+\frac{a}{c} < \frac{b} {c}
+\end{equation}
+when $c < 0$,
+\begin{equation}
+ac > bc
+\end{equation}
+\begin{equation}
+\frac{a}{c} > \frac{b} {c}
+\end{equation}
+
+\item If $a > b$ then,
+\begin{equation}
+a + c > b + c
+\end{equation}
+\begin{equation}
+a - c > b - c
+\end{equation}
+when $c > 0$
+\begin{equation}
+ac > bc
+\end{equation}
+\begin{equation}
+\frac{a}{c} > \frac{b} {c}
+\end{equation}
+when $c < 0$,
+\begin{equation}
+ac < bc
+\end{equation}
+\begin{equation}
+\frac{a}{c} < \frac{b} {c}
+\end{equation}
+\item If $a > b$
+\begin{equation}
+-a < -b
+\end{equation}
+\item If $a < b$
+\begin{equation}
+-a > -b
+\end{equation}
+\end{description}
+The same inequalities hold when the signs contain an equal component as well.
+
+
+\chapter{Trigonometry}
+This chapter briefly reviews the basics of Trigonometry. Calculus applied on Trigonometry will be discussed in later chapters.
+
 
 \end{document}
