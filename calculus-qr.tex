@@ -1,5 +1,6 @@
 \documentclass[a4paper]{book}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \title{\LARGE{Calculus Quick Reference}}
 \author{Sourav Datta}
 \date{}
@@ -301,5 +302,49 @@ c^2 = a^2 + b^2 - 2ab\cos C
 \item \begin{equation} \cos^{-1}(\cos y) = y\ \ ,\ 0 \le y \le \pi \end{equation}
 \item \begin{equation} \cos^{-1}(\cos x) = x\ \ ,\ -1 \le x \le 1 \end{equation}
 \end{description}
+
+
+\part{Calculus}
+
+\chapter{Numbers, Functions and Graphs}
+\section{The Real Line}
+The real numbers can be depicted as points on a $1$ dimensional line segment which extends to $-\infty$ to $\infty$ and has an arbitrary but consistent measure for unit length.
+
+\setlength\fboxrule{0pt}
+\fbox{\includegraphics[scale=0.6]{calc1}}
+
+The complex numbers (such as $\sqrt{-1}$) are placed on a perpendicular line to the real line passing through $0$. More on complex numbers later.
+
+\section{Absolute Values}
+Absolute values plays a very important role in Calculus. An absolute value of $x$ is defined as,
+\begin{equation}
+|x| = 
+\begin{cases}
+	 x& \text{when } x \geq 0\\
+	-x& \text{when } x < 0
+\end{cases}
+\end{equation}
+
+Absolute values have the following properties,
+\begin{equation}
+|ab| = |a||b|
+\end{equation}
+\begin{equation}
+|a - b| = |b - a|
+\end{equation}
+\begin{equation}
+|a| = |-a|
+\end{equation}
+\begin{equation}
+|a + b| \leq |a| + |b|
+\end{equation}
+\begin{equation}
+|a| < c \implies -c < a < c
+\end{equation}
+\begin{equation}
+|x - a| < c \implies a - c < x < a + c
+\end{equation}
+
+
 
 \end{document}
